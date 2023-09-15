@@ -9,7 +9,6 @@ use App\Models\Tweet;
 
 use Auth;
 
-// 🔽 追加
 use App\Models\User;
 
 class TweetController extends Controller
