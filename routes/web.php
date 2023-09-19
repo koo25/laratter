@@ -6,6 +6,8 @@ use App\Http\Controllers\FavoriteController;
 use App\Http\Controllers\FollowController;
 
 Route::middleware('auth')->group(function () {
+  Route::get('/tweet/timeline', [TweetController::class, 'timeline'])->name('tweet.timeline');
+  Route::get('user/{user}', [FollowController::class, 'show'])->name('follow.show');
   Route::post('user/{user}/follow', [FollowController::class, 'store'])->name('follow');
   Route::post('user/{user}/unfollow', [FollowController::class, 'destroy'])->name('unfollow');  
   Route::post('tweet/{tweet}/favorites', [FavoriteController::class, 'store'])->name('favorites');
