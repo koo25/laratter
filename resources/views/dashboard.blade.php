@@ -2,7 +2,11 @@
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
 <<<<<<< HEAD
+<<<<<<< HEAD
             {{ __('Dashboard') }}
+=======
+            {{ __('ログイン!!!') }}
+>>>>>>> origin/main
 =======
             {{ __('ログイン!!!') }}
 >>>>>>> origin/main
@@ -14,7 +18,11 @@
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
 <<<<<<< HEAD
+<<<<<<< HEAD
                     {{ __("You're logged in!") }}
+=======
+                    {{ __("ログインした!!!!") }}
+>>>>>>> origin/main
 =======
                     {{ __("ログインした!!!!") }}
 >>>>>>> origin/main

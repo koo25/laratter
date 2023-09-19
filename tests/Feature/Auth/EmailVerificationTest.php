@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Tests\Feature\Auth;
 
 use App\Models\User;
@@ -65,6 +66,8 @@ class EmailVerificationTest extends TestCase
     }
 }
 =======
+=======
+>>>>>>> origin/main
 use App\Models\User;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Verified;
@@ -116,4 +119,7 @@ test('email is not verified with invalid hash', function () {
 
     expect($user->fresh()->hasVerifiedEmail())->toBeFalse();
 });
+<<<<<<< HEAD
+>>>>>>> origin/main
+=======
 >>>>>>> origin/main

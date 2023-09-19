@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Tests\Feature\Auth;
 
 use App\Providers\RouteServiceProvider;
@@ -32,6 +33,8 @@ class RegistrationTest extends TestCase
     }
 }
 =======
+=======
+>>>>>>> origin/main
 use App\Providers\RouteServiceProvider;
 
 test('registration screen can be rendered', function () {
@@ -51,4 +54,7 @@ test('new users can register', function () {
     $this->assertAuthenticated();
     $response->assertRedirect(RouteServiceProvider::HOME);
 });
+<<<<<<< HEAD
+>>>>>>> origin/main
+=======
 >>>>>>> origin/main

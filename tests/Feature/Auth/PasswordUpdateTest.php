@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Tests\Feature\Auth;
 
 use App\Models\User;
@@ -51,6 +52,8 @@ class PasswordUpdateTest extends TestCase
     }
 }
 =======
+=======
+>>>>>>> origin/main
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 
@@ -89,4 +92,7 @@ test('correct password must be provided to update password', function () {
         ->assertSessionHasErrorsIn('updatePassword', 'current_password')
         ->assertRedirect('/profile');
 });
+<<<<<<< HEAD
+>>>>>>> origin/main
+=======
 >>>>>>> origin/main

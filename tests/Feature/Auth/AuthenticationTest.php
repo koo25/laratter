@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Tests\Feature\Auth;
 
 use App\Models\User;
@@ -45,6 +46,8 @@ class AuthenticationTest extends TestCase
     }
 }
 =======
+=======
+>>>>>>> origin/main
 use App\Models\User;
 use App\Providers\RouteServiceProvider;
 
@@ -76,4 +79,7 @@ test('users can not authenticate with invalid password', function () {
 
     $this->assertGuest();
 });
+<<<<<<< HEAD
+>>>>>>> origin/main
+=======
 >>>>>>> origin/main

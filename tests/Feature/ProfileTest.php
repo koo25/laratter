@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Tests\Feature;
 
 use App\Models\User;
@@ -99,6 +100,8 @@ class ProfileTest extends TestCase
     }
 }
 =======
+=======
+>>>>>>> origin/main
 use App\Models\User;
 
 test('profile page is displayed', function () {
@@ -182,4 +185,7 @@ test('correct password must be provided to delete account', function () {
 
     $this->assertNotNull($user->fresh());
 });
+<<<<<<< HEAD
+>>>>>>> origin/main
+=======
 >>>>>>> origin/main

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <nav x-data="{ open: false }" class="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -100,6 +101,8 @@
     </div>
 </nav>
 =======
+=======
+>>>>>>> origin/main
 <!-- resources/views/layouts/navigation.blade.php -->
 
 <nav x-data="{ open: false }" class="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700">
@@ -138,6 +141,15 @@
             {{ __('Mypage') }}
           </x-nav-link>
         </div>
+<<<<<<< HEAD
+=======
+        <!-- 🔽 タイムラインへのリンクを追加 -->
+        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+          <x-nav-link :href="route('tweet.timeline')" :active="request()->routeIs('tweet.timeline')">
+            {{ __('Timeline') }}
+          </x-nav-link>
+        </div>
+>>>>>>> origin/main
       </div>
 
       <!-- Settings Dropdown -->
@@ -210,6 +222,15 @@
         {{ __('Mypage') }}
       </x-responsive-nav-link>
     </div>
+<<<<<<< HEAD
+=======
+    <!-- 🔽 タイムラインへのリンクを追加 -->
+    <div class="pt-2 pb-3 space-y-1">
+      <x-responsive-nav-link :href="route('tweet.timeline')" :active="request()->routeIs('tweet.timeline')">
+        {{ __('Timeline') }}
+      </x-responsive-nav-link>
+    </div>
+>>>>>>> origin/main
 
     <!-- Responsive Settings Options -->
     <div class="pt-4 pb-1 border-t border-gray-200 dark:border-gray-600">
@@ -237,4 +258,7 @@
   </div>
 </nav>
 
+<<<<<<< HEAD
+>>>>>>> origin/main
+=======
 >>>>>>> origin/main

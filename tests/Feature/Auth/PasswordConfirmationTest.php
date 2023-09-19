@@ -1,6 +1,7 @@
 <?php
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace Tests\Feature\Auth;
 
 use App\Models\User;
@@ -44,6 +45,8 @@ class PasswordConfirmationTest extends TestCase
     }
 }
 =======
+=======
+>>>>>>> origin/main
 use App\Models\User;
 
 test('confirm password screen can be rendered', function () {
@@ -74,4 +77,7 @@ test('password is not confirmed with invalid password', function () {
 
     $response->assertSessionHasErrors();
 });
+<<<<<<< HEAD
+>>>>>>> origin/main
+=======
 >>>>>>> origin/main
