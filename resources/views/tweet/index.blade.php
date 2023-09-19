@@ -22,11 +22,9 @@
               <tr class="hover:bg-gray-lighter">
                 <td class="py-4 px-6 border-b border-gray-light dark:border-gray-600">
                   <div class="flex">
-                    <!-- 🔽 編集 -->
                     <a href="{{ route('follow.show', $tweet->user->id) }}">
                       <p class="text-left text-gray-dark dark:text-gray-200">{{$tweet->user->name}}</p>
                     </a>
-                    <!-- 🔼 ここまで -->
                     <!-- follow 状態で条件分岐 -->
                     @if(Auth::user()->followings()->where('users.id', $tweet->user->id)->exists())
                     <!-- unfollow ボタン -->
