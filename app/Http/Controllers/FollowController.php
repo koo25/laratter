@@ -34,6 +34,7 @@ class FollowController extends Controller
         return redirect()->back();
     }
 
+
     /**
      * Display the specified resource.
      */

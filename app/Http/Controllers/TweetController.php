@@ -18,7 +18,6 @@ class TweetController extends Controller
      */
     public function index()
     {
-        //
         $tweets = Tweet::getAllOrderByUpdated_at();
         return response()->view('tweet.index',compact('tweets'));
     }
@@ -28,7 +27,6 @@ class TweetController extends Controller
      */
     public function create()
     {
-        //
         return response()->view('tweet.create');
     }
 
@@ -131,10 +129,10 @@ class TweetController extends Controller
         $followings = User::find(Auth::id())->followings->pluck('id')->all();
         // 自分とフォローしている人が投稿したツイートを取得する
         $tweets = Tweet::query()
-        ->where('user_id', Auth::id())
-        ->orWhereIn('user_id', $followings)
-        ->orderBy('updated_at', 'desc')
-        ->get();
+            ->where('user_id', Auth::id())
+            ->orWhereIn('user_id', $followings)
+            ->orderBy('updated_at', 'desc')
+            ->get();
         return view('tweet.index', compact('tweets'));
     }
 
