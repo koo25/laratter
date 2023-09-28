@@ -5,10 +5,16 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TweetController;
 use App\Http\Controllers\FavoriteController;
 use App\Http\Controllers\FollowController;
+use App\Http\Controllers\SearchController;
 
 Route::middleware('auth')->group(function () {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+  Route::get('/tweet/search/input', [SearchController::class, 'create'])->name('search.input');
+  Route::get('/tweet/search/result', [SearchController::class, 'index'])->name('search.result');
+>>>>>>> 8135d7bf10c9d0828844f5bf8c387353a0a82d64
   Route::get('/tweet/timeline', [TweetController::class, 'timeline'])->name('tweet.timeline');
   Route::get('user/{user}', [FollowController::class, 'show'])->name('follow.show');
 >>>>>>> origin/main

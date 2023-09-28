@@ -31,12 +31,14 @@
                     <p class="text-left text-gray-800 dark:text-gray-200">{{$tweet->user->name}}</p>
 =======
                   <div class="flex">
-                    <!-- 🔽 編集 -->
                     <a href="{{ route('follow.show', $tweet->user->id) }}">
                       <p class="text-left text-gray-dark dark:text-gray-200">{{$tweet->user->name}}</p>
                     </a>
+<<<<<<< HEAD
                     <!-- 🔼 ここまで -->
 >>>>>>> origin/main
+=======
+>>>>>>> 8135d7bf10c9d0828844f5bf8c387353a0a82d64
                     <!-- follow 状態で条件分岐 -->
                     @if(Auth::user()->followings()->where('users.id', $tweet->user->id)->exists())
                     <!-- unfollow ボタン -->
